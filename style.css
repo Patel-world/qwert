@@ -1,0 +1,187 @@
+html{
+    font-size: 62.5%;
+    box-sizing:border-box;
+}
+
+img.logo {
+    width: 60px;
+    height: 55px;
+}
+
+body{
+    margin:0;
+    height:100vh;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8rem 1fr 5rem;
+    height: 100%;
+}
+
+header{
+    grid-area: header;
+    background-color: #203040;
+}
+
+main{
+    grid-area: main;
+    padding: 0rem;
+}
+
+img.img-fluid {
+    max-width: 107rem;
+    width: 100%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #203040;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff8000;
+}
+
+header a{
+    color: #fff;
+    padding: 1rem;
+}
+
+a.brand{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.row.center{
+    justify-content: center;
+}
+
+img{
+    border: 0.5rem;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+img.bj-banner-bg {
+    position: relative;
+    padding-top: 0px !important;
+    width: 100%;
+    z-index: 1012;
+}
+
+img.medium{
+    max-width: 29rem;
+    width: 100%;
+}
+
+.card{
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.card-body{
+    padding: 1rem;
+}
+
+.card-body > *{
+    margin-bottom: 0.5rem;
+}
+
+h1, h2{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.price{
+    font-size: 2rem;
+}
+
+.rating span{
+    color: #f0c040;
+    margin: 0.1rem;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("pex.jpg");
+  
+    min-height: 500px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
